@@ -1,0 +1,51 @@
+:root {
+    --white: #FEFEFE;
+    --lightBlue: #DDEDF5;
+    --medBlue: #6A8CA1;
+    --darkBlue: #315F7A;
+    --red: #E31742;
+    --pink: #F6A8AC;
+    --yellow: #FEC242;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: var(--white);
+    background-image: radial-gradient(var(--pink) 2px, var(--white) 2px);
+    background-size: 50px 50px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--lightBlue);
+    padding: 20px 30px 5px;
+}
+
+h1 {
+    color: var(--red);
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-weight: 400;
+    font-size: 72px;
+    margin: 0;
+}
+
+#lace {
+    height: 52px;
+    background-image: url("./img/lace.svg");
+}
+
+main {
+    align-content: center;
+    padding: 30px;
+    margin-left: auto;
+}
+
+main img {
+    width: 600px;
+    border-radius: 30px;
+    border: 10px solid var(--yellow);
+    margin-bottom: 30px;
+}
