@@ -19,10 +19,7 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: var(--lightBlue);
-    padding: 20px 30px 5px;
-}
+/* Header */
 
 h1 {
     color: var(--red);
@@ -32,20 +29,52 @@ h1 {
     margin: 0;
 }
 
+#header-wrap {
+    background-color: var(--lightBlue);
+    padding: 20px 30px 5px;
+}
+
+header {
+    width: 60vw;
+    margin: auto;
+}
+
 #lace {
     height: 52px;
     background-image: url("./img/lace.svg");
 }
 
-main {
+/* Main */
+
+#main-wrap {
     align-content: center;
     padding: 30px;
-    margin-left: auto;
+    width: 60vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
 }
 
-main img {
-    width: 600px;
+#main-wrap img {
+    max-width: 100%;
     border-radius: 30px;
     border: 10px solid var(--yellow);
-    margin-bottom: 30px;
+}
+
+#main-wrap figure {
+    float: right;
+    margin: 0 0 30px 30px;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#main-wrap figcaption, #main-wrap figcaption a {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--yellow);
+    text-align: right;
+}
+
+main {
+    grid-area: 1 / 1 / 2 / 2;
 }
